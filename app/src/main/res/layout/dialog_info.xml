@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_centerInParent="true">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog">
+
+            <TextView
+            android:id="@+id/dialog_info_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="@string/title_dialog"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/title_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttname"
+                android:layout_below="@id/dialog_info_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/name_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_name"
+                android:layout_below="@id/dialog_info_tv_title"
+                android:layout_toRightOf="@id/dialog_info_tv_ttname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="name"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_tttime"
+                android:layout_below="@id/dialog_info_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/time_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_time"
+                android:layout_below="@id/dialog_info_tv_name"
+                android:layout_toRightOf="@id/dialog_info_tv_tttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="time"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttwidth"
+                android:layout_below="@id/dialog_info_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/width_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_width"
+                android:layout_below="@id/dialog_info_tv_time"
+                android:layout_toRightOf="@id/dialog_info_tv_ttwidth"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="width"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttheight"
+                android:layout_below="@id/dialog_info_tv_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/height_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_height"
+                android:layout_below="@id/dialog_info_tv_width"
+                android:layout_toRightOf="@id/dialog_info_tv_ttheight"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="height"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttimgsize"
+                android:layout_below="@id/dialog_info_tv_ttheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/Size_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_imgsize"
+                android:layout_below="@id/dialog_info_tv_height"
+                android:layout_toRightOf="@id/dialog_info_tv_ttimgsize"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="image size"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttpath"
+                android:layout_below="@id/dialog_info_tv_imgsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/path_image"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dialog"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_path"
+                android:layout_below="@id/dialog_info_tv_imgsize"
+                android:layout_toRightOf="@id/dialog_info_tv_ttpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="path"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/text_dialog"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"/>
+
+            <View
+                android:id="@+id/dialog_info_v_view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/dialog_info_tv_path"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray"/>
+            
+            <Button
+                android:id="@+id/dialog_info_bt_close"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/dialog_info_v_view"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_blue"
+                android:text="CLOSE"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_person_1"/>
+    </RelativeLayout>
+</RelativeLayout>

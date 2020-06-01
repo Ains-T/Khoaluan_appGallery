@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog">
+
+            <TextView
+                android:id="@+id/dialog_delete_tv_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="@string/warning"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_ttname"
+                android:layout_below="@id/dialog_delete_tv_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/content_delete"
+                android:textSize="17dp"
+                android:textColor="@color/text_dialog"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/dialog_delete_bt_no"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/button_blue"
+                    android:text="NO"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/dialog_delete_bt_yes"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/dialog_delete_bt_no"
+                    android:background="@drawable/button_red"
+                    android:text="YES"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_delete_1"/>
+    </RelativeLayout>
+</RelativeLayout>

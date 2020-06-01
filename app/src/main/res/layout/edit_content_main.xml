@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:showIn="@layout/image_fragment"
+    tools:context=".Edit.EditImageActivity">
+
+    <ImageView
+        android:id="@+id/edit_content_main_iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter" />
+
+    <com.example.galleryimgapp.Utils.NonSwipeableViewPager
+        android:id="@+id/edit_content_main_nsv_viewpaper"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/edit_content_main_tb_tabs"
+        android:layout_below="@+id/edit_content_main_iv_preview" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/edit_content_main_tb_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+</RelativeLayout>

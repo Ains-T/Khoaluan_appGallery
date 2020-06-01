@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog">
+
+            <TextView
+                android:id="@+id/dialog_sort_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="@string/sort"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <RadioGroup
+                android:id="@+id/dialog_sort_rg_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialog_sort_tv_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dialog_sort_rb_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_name"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dialog_sort_rb_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_time"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dialog_sort_rb_imgsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_imgsize"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <View
+                android:id="@+id/dialog_sort_v_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/dialog_sort_rg_sort"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RadioGroup
+                android:id="@+id/dialog_sort_rg_sort2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialog_sort_v_line"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dialog_sort_rb_asc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asc"
+                    android:textSize="16dp"
+                    android:textStyle="italic"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dialog_sort_rb_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc"
+                    android:textSize="16dp"
+                    android:textStyle="italic"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/dialog_sort_bt_sort"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_green"
+                android:text="SORT..."
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sort_1"/>
+    </RelativeLayout>
+</RelativeLayout>

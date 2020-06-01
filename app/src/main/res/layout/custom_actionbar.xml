@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_dark">
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/custom_actionbar_bmb_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+        app:bmb_backgroundEffect="false"
+        app:bmb_showDuration="1000"
+        app:bmb_hideDuration="500"
+        app:bmb_dotRadius="0dp">
+
+        <ImageView
+            android:id="@+id/custom_actionbar_iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_photos_white_1" />
+    </com.nightonke.boommenu.BoomMenuButton>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/custom_actionbar_bmb_left"
+        android:layout_toEndOf="@+id/custom_actionbar_bmb_left">
+        <TextView
+            android:id="@+id/custom_actionbar_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="abc"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</RelativeLayout>

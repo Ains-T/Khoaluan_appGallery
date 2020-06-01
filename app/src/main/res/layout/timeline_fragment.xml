@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeLine.TimelineFragment">
+
+        <ViewFlipper
+            android:id="@+id/timeline_fragment_vf_time"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="#0F0F0C"/>
+
+        <RelativeLayout
+            android:layout_below="@id/timeline_fragment_vf_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+            <ListView
+                android:id="@+id/timeline_fragment_lv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:clipChildren="false" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:shadowColor="#000"
+                android:textColor="#fff"
+                android:shadowRadius="11.0"
+                android:text="Dòng thời gian"
+                android:textSize="18dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/timeline_fragment_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:shadowColor="#000"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="5dp"
+                android:shadowRadius="7.0"
+                android:text="Time"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

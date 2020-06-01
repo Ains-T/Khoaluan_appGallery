@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GalleryImgApp</string>
+
+    <string name="image"> <b> Images </b> </string>
+    <string name="album"> <b> Albums </b> </string>
+    <string name="timeline"> <b> Timeline </b> </string>
+
+    <!--    dialog info-->
+    <string name="title_dialog"> - IMAGE INFO - </string>
+    <string name="name_image"> NAME: </string>
+    <string name="time_image"> TIME: </string>
+    <string name="width_image"> WIDTH: </string>
+    <string name="height_image"> HEIGHT: </string>
+    <string name="Size_image"> IMAGE SIZE:</string>
+    <string name="path_image"> PATH: </string>
+
+    <!--    dialog delete-->
+    <string name="warning"> WARNING !!! </string>
+    <string name="content_delete"> Ảnh sau khi xoá sẽ không thể khôi phục lại.<b> Xác nhận xoá?</b> </string>
+
+    <!--    dialog sort-->
+    <string name="sort"> - SORT - </string>
+    <string name="sort_time"> TIME </string>
+    <string name="sort_name"> NAME </string>
+    <string name="sort_imgsize"> IMAGE SIZE</string>
+    <string name="asc"> ASCENDING </string>
+    <string name="desc"> DESCENDING </string>
+
+    <!--  filter and edit-->
+    <string name="activity_title_main">Filters</string>
+    <string name="action_settings">Settings</string>
+    <string name="filters">FILTERS</string>
+    <string name="edit">EDIT</string>
+    <string name="edit_small">edit</string>
+
+    <string name="lbl_brightness">BRIGHTNESS</string>
+    <string name="lbl_contrast">CONTRAST</string>
+    <string name="lbl_saturation">SATURATION</string>
+    <string name="tab_filters">FILTERS</string>
+    <string name="tab_edit">EDIT</string>
+
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="filter_normal">Normal</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_open">OPEN</string>
+</resources>
